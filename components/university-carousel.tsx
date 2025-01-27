@@ -55,7 +55,10 @@ export function UniversityCarousel() {
             style={{ transform: `translateX(-${activeSlide * 100}%)` }}
           >
             {universities.map((university) => (
-              <div key={university.id} className="w-1/3 flex-shrink-0 px-4">
+              <div
+                key={university.id}
+                className="md:w-1/3 flex-shrink-0 px-1 md:px-4"
+              >
                 <Card className="overflow-hidden  p-2">
                   <div className="relative h-48">
                     <Image

@@ -54,7 +54,7 @@ export function BlogGallery() {
               {blogs.map((blog, index) => (
                 <div
                   key={index}
-                  className="w-1/3 flex-shrink-0 transition-transform duration-300"
+                  className="md:w-1/3 flex-shrink-0 transition-transform duration-300"
                   style={{
                     transform: `translateX(-${activeSlide * 100}%)`,
                   }}
