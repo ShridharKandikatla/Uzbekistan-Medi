@@ -10,11 +10,12 @@ export function Hero() {
         src={"/view-school.png"}
         alt="Medical Professional"
         fill
-        className="opacity-10 w-full h-full"
+        className="opacity-10 w-full h-full object-cover"
         priority
       />
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+
+      <div className="relative max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 items-center relative z-10">
           {/* Hero Content */}
           <div className="space-y-6">
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
@@ -42,7 +43,7 @@ export function Hero() {
             </ul>
             <Button
               size="lg"
-              className="bg-gradient-to-r from-[#64B6C7] from-0% to-[#207C83] to-100% hover:bg-teal-600 text-white"
+              className="bg-gradient-to-r from-[#64B6C7] from-0% to-[#207C83] to-100% hover:bg-teal-600 text-white relative z-20"
             >
               Apply Now
             </Button>
@@ -60,8 +61,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-
-      {/* WhatsApp Button */}
       <a
         href="https://wa.me/your-number"
         target="_blank"
